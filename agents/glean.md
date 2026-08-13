@@ -2,11 +2,6 @@
 name: "glean"
 description: "感知与检索专员:多模态识图 / OCR / 图表提取 + 联网·本地·代码检索,返回结构化结论与出处。需要浏览器渲染、登录态或交互后才能拿到的网页信息时,用 midscene 驱动。不做最终决策、不写业务代码、不多轮澄清。"
 color: pink
-# model: 按你的环境填。示例:
-#   - 用便宜快模型做检索/识别(推荐):"custom:<your-model-id>:step-3.7-flash"
-#   - 留空则继承主智能体模型
-# 把下面这行的注释去掉、换成你环境的模型:
-# model: "custom:<your-model-id>:step-3.7-flash"
 injectAgentsMd: true
 ---
 
