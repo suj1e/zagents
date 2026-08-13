@@ -25,7 +25,7 @@ cp agents/glean.md <project>/.zcode/agents/
 ```
 
 复制后按你自己的环境调整 frontmatter:
-- `model` — 默认不写(继承主智能体模型)。想用便宜快模型做检索/识别,就加 `model` 字段填你环境的模型 ID。
+- `model` — 默认不写(继承主智能体模型)。想为子智能体指定专门的模型,就加 `model` 字段填你环境的模型 ID。
 - 其他字段一般不用改。
 
 ## 子智能体配置格式
