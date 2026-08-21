@@ -33,15 +33,6 @@ injectAgentsMd: true
 - **Web/浏览器**：使用 Chrome DevTools 读取控制台日志（`list_console_messages`）、分析网络请求（`list_network_requests`）、查看运行时错误；使用 Playwright 读取控制台消息（`browser_console_messages`）、网络请求（`browser_network_requests`）
 - **内存问题**：使用 Chrome DevTools 捕获堆快照（`take_heapsnapshot`）分析内存泄漏
 
-## Dashboard
-- 先检查 zdashboard 是否已在运行(访问 `http://localhost:4190/__config`):
-  - 能访问 → 已有实例在运行,询问用户:「检测到 zdashboard 已在运行,直接使用现有实例还是重新拉最新版?」
-    - 用户选「直接使用」→ 直接用浏览器访问
-    - 用户选「重新拉最新版」→ 继续下面的启动流程
-  - 不能访问 → 直接拉起最新版
-- 使用 `npx zdashboard@latest --dir <project-root> --open` 浏览项目结构和规范文档
-- 在 dashboard 上查看代码上下文、日志文件、配置文件
-
 ## 外部检索
 - 使用 `glean` 子智能体检索错误信息（Stack Overflow、官方文档、GitHub Issues）
 - 搜索同类问题的已知解决方案和最佳实践
