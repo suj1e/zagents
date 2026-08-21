@@ -93,6 +93,13 @@ description: "Use when the user wants to design a solution — technical archite
 ### 9. 开 Change
 执行 `openspec new change <yyyy-mm-dd>-<kebab-slug> --description "..."`,在 `openspec/changes/<slug>/` 下写入 `proposal.md` 和 `design.md`,让设计方案进入可执行状态。
 
+### 9.5. 触发测试策略(自动)
+Change 开后,自动调用 `ztest` skill 为该 change 产出测试计划:
+- ztest 读 `proposal.md` + `design.md` + `tasks.md`
+- 在 `design.md` 末尾追加 `## 测试策略` 章节(分层策略/覆盖率目标/测试数据/边界异常并发)
+- 在 `tasks.md` 每个 task 后面追加测试验收标准
+- 测试策略是方案的**必要组成部分**,不是可选项
+
 ### 10. 交付
 列出「设计方案 + 关键图 + 推荐方案 + 开放问题 + openspec change 路径」,交给用户决策。
 
