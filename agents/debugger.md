@@ -34,8 +34,12 @@ injectAgentsMd: true
 - **内存问题**：使用 Chrome DevTools 捕获堆快照（`take_heapsnapshot`）分析内存泄漏
 
 ## Dashboard
-- 如果 zdashboard 已启动（端口 4190），直接用浏览器访问
-- 使用 `npx zdashboard@latest --mode view --dir <project-root> --open` 浏览项目结构和规范文档
+- 先检查 zdashboard 是否已在运行(访问 `http://localhost:4190/__config`):
+  - 能访问 → 已有实例在运行,询问用户:「检测到 zdashboard 已在运行,直接使用现有实例还是重新拉最新版?」
+    - 用户选「直接使用」→ 直接用浏览器访问
+    - 用户选「重新拉最新版」→ 继续下面的启动流程
+  - 不能访问 → 直接拉起最新版
+- 使用 `npx zdashboard@latest --dir <project-root> --open` 浏览项目结构和规范文档
 - 在 dashboard 上查看代码上下文、日志文件、配置文件
 
 ## 外部检索
