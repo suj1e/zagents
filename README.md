@@ -13,7 +13,7 @@
 | 子智能体 | 职责 |
 |---------|------|
 | [`glean`](agents/glean.md) | 感知与检索专员:多模态识图 / OCR / 图表提取 + 联网·本地·代码检索,返回结构化结论与出处 |
-| [`debugger`](agents/debugger.md) | 调试/故障排查专员:读日志、trace 调用链、定位根因、提出修复建议。遇到报错、测试失败、诡异行为、线上故障时使用 |
+| [`architecter`](agents/architecter.md) | 调查与设计一体专员:证据驱动根因诊断（trace 调用链/平台专项）+ 文件级修复蓝图（影响面/备选/trade-off）。bug、故障、性能劣化、"先查清再修"场景使用 |
 | [`craftsman`](agents/craftsman.md) | 执行专员:按指令编码落地;指令含测试策略时按 TDD 红→绿→重构执行,交付测试 + 实现 + 覆盖率报告 |
 | [`zapply-reviewer`](agents/zapply-reviewer.md) | zapply 审查专员：先做依赖决策阶梯 + 14 维清单分析，再调用内置 code-reviewer 做代码质量审查，汇总输出 blocker/suggestion 分级报告。zapply 核实门禁使用,绝不修改代码 |
 
