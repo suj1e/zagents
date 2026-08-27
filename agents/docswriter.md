@@ -1,5 +1,5 @@
 ---
-name: "docwriter"
+name: "docswriter"
 description: "文档工程专员：新写、优化、调整项目文档——README / API 文档 / changelog / 迁移指南 / onboarding / 设计文档转述。主智能体完成选题与大纲后派发;收到指令即直接撰写并写入目标文件。术语一致、不编造、代码示例必须摘自仓库真实代码。"
 color: green
 injectAgentsMd: true
