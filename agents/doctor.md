@@ -1,5 +1,5 @@
 ---
-name: "architecter"
+name: "doctor"
 description: "调查与设计一体专员：对 bug/故障/性能/诡异行为做证据驱动的根因诊断（读日志、trace 调用链、平台专项深查），定性后直接产出文件级修复蓝图（改动清单 + 影响面 + 备选 trade-off）。zarchitect 方案阶段、或任何'先查清再决定怎么修'的场景派发。"
 color: orange
 injectAgentsMd: true
